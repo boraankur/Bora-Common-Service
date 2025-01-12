@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora Common Service Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header>
+        <h1>Bora Common Service</h1>
+        <div class="search-bar">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search for a service..."
+                oninput="filterCards()"
+            />
+            <button onclick="clearSearch()">Clear</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="dashboard-container">
+        <div class="card-container" id="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>New PAN</h3>
+                <h4>Charge: 300</h4>
+                <br>
+                <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Correction in PAN</h3>
+                <h4>Charge: 350</h4>
+                <br>
+                <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Instant PAN Card</h3>
+                <h4>Charge: 550</h4>
+                <br>
+                <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Minor PAN</h3>
+                <h4>Charge: 500</h4>
+                <br>
+                <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Minor PAN to Major PAN</h3>
+                <h4>Charge: 350</h4>
+                <br>
+                <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 6 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Reprint PAN Card</h3>
+                <h4>Charge: 350</h4>
+                <br>
+                <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 7 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Download e-PAN</h3>
+                <h4>Charge: 50</h4>
+                <br>
+                <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 8 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>PAN & Aadhaar Link Status</h3>
+                <h4>Charge: Free of Cost</h4>
+                <br>
+                <a href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/link-aadhaar-status" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 8 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>PAN & Aadhaar Link</h3>
+                <h4>Charge: 100</h4>
+                <br>
+                <a href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/bl-link-aadhaar" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 9 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Track PAN Card</h3>
+                <h4>Charge: Free of Cost</h4>
+                <br>
+                <a href="https://tin.tin.nsdl.com/pantan/StatusTrack.html" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 10 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Download Aadhaar</h3>
+                <h4>Charge: 50</h4>
+                <br>
+                <a href="https://myaadhaar.uidai.gov.in/portal" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 11 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Order Aadhaar PVC Card</h3>
+                <h4>Charge: 100</h4>
+                <br>
+                <a href="https://myaadhaar.uidai.gov.in/portal" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 12 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Aadhaar Document Update</h3>
+                <h4>Charge: 100</h4>
+                <br>
+                <a href="https://myaadhaar.uidai.gov.in/portal" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 13 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Bank Seeding Status</h3>
+                <h4>Charge: 50</h4>
+                <br>
+                <a href="https://myaadhaar.uidai.gov.in/portal" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 14 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>New Voter ID</h3>
+                <h4>Charge: 100</h4>
+                <br>
+                <a href="https://voters.eci.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 15 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Correction in Voter ID</h3>
+                <h4>Charge: 200</h4>
+                <br>
+                <a href="https://voters.eci.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 16 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>E-EPIC Download</h3>
+                <h4>Charge: 50</h4>
+                <br>
+                <a href="https://voters.eci.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 17 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Voter & Aadhaar Link</h3>
+                <h4>Charge: 50</h4>
+                <br>
+                <a href="https://voters.eci.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 18 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Voter & Mobile no Link</h3>
+                <h4>Charge: 50</h4>
+                <br>
+                <a href="https://voters.eci.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 19 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Search in Electoral Roll</h3>
+                <h4>Charge: Free of Cost</h4>
+                <br>
+                <a href="https://voters.eci.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 20 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Replacement of Voter ID</h3>
+                <h4>Charge: 200</h4>
+                <br>
+                <a href="https://voters.eci.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 21 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Issuance of Caste Certificate</h3>
+                <h4>Charge: 500</h4>
+                <br>
+                <a href="https://sewasetu.assam.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 22 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Old Caste to Digital Caste</h3>
+                <h4>Charge: 300</h4>
+                <br>
+                <a href="https://sewasetu.assam.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 23 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Income Certificate</h3>
+                <h4>Charge: 300</h4>
+                <br>
+                <a href="https://sewasetu.assam.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 24 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Registration of Employment Exchange</h3>
+                <h4>Charge: 150</h4>
+                <br>
+                <a href="https://sewasetu.assam.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 25 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Re-Registration of Employment Exchange</h3>
+                <h4>Charge: 150</h4>
+                <br>
+                <a href="https://sewasetu.assam.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 26 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Renewal-Registration of Employment Exchange</h3>
+                <h4>Charge: 150</h4>
+                <br>
+                <a href="https://sewasetu.assam.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 27 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>ABHA Card</h3>
+                <h4>Charge: 50</h4>
+                <br>
+                <a href="https://abha.abdm.gov.in/abha/v3/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 28 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Ayushman Card</h3>
+                <h4>Charge: 100</h4>
+                <br>
+                <a href="https://beneficiary.nha.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 29 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>ABHA Card Download</h3>
+                <h4>Charge: 50</h4>
+                <br>
+                <a href="https://abha.abdm.gov.in/abha/v3/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            
+            <!-- Card 30 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Ayushman Card Download</h3>
+                <h4>Charge: 50</h4>
+                <br>
+                <a href="https://beneficiary.nha.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 31 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>RTPS Certificate Download</h3>
+                <h4>Charge: 50</h4>
+                <br>
+                <a href="https://edistrict.assam.gov.in/eDistrict/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 32 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Sewa Setu Assam</h3>
+                <br>
+                <br>
+                <a href="https://sewasetu.assam.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 33 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Sewa Setu (CSC)</h3>
+                <br>
+                <br>
+                <a href="https://connect.csc.gov.in/account/authorize?response_type=code&client_id=0a739c35-3401-495e-9ea8-7f767cfb0bac&redirect_uri=https%3A%2F%2Fsewasetu.assam.gov.in%2Fiservices%2Fadmin%2Fcsc-response&state=29905" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 34 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>CSC Login</h3>
+                <br>
+                <br>
+                <a href="https://connect.csc.gov.in/account/authorize?response_type=code&client_id=0f8ca686-5a31-46b8-bb51-d9834ba9fa9d&redirect_uri=https%3A%2F%2Fdigitalseva.csc.gov.in%2Fauth%2Fcallback%2F&state=50940" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 35 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>NSDL PAN Service</h3>
+                <br>
+                <br>
+                <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 36 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>UTI PAN Service</h3>
+                <br>
+                <br>
+                <a href="https://www.pan.utiitsl.com/PAN/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 36 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Income Tax</h3>
+                <br>
+                <br>
+                <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 37 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>My Aadhaar</h3>
+                <br>
+                <br>
+                <a href="https://myaadhaar.uidai.gov.in/login" target="_blank" class="btn">Click to Apply</a>
+            </div>
+            <!-- Card 38 -->
+            <div class="card">
+                <div class="icon">
+                    <img src="doc.png" alt="Service Icon">
+                </div>
+                <h3>Voter Service </h3>
+                <br>
+                <br>
+                <a href="https://voters.eci.gov.in/" target="_blank" class="btn">Click to Apply</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Filter function for search
+        function filterCards() {
+            const input = document.getElementById("search-input").value.toLowerCase();
+            const cards = document.querySelectorAll(".card");
+            cards.forEach((card) => {
+                const title = card.querySelector("h3").innerText.toLowerCase();
+                if (title.includes(input)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        // Clear search
+        function clearSearch() {
+            document.getElementById("search-input").value = "";
+            filterCards();
+        }
+    </script>
+</body>
+</html>
